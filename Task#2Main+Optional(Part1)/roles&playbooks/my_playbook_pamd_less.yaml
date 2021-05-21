@@ -1,0 +1,8 @@
+---
+# Ansible hardening user's password playbook
+- name: Task#2
+  become: yes
+  hosts: all
+  connection: local
+  roles:
+       - { role: pamd_less }
