@@ -1,0 +1,17 @@
+---
+tcpwrappers_allow:
+  - daemon: 'sshd'
+    clients:
+      - 'ALL'
+
+  - daemon: 'ALL'
+    clients:
+      - 'localhost'
+tcpwrappers_allow_all_connections: false  #Defines if all connections are allowed
+tcpwrappers_deny:
+  - daemon: 'sshd'
+    clients:
+      - '94.153.6.214'
+      - '93.153.6.214'
+      - '64.66.44.25'
+tcpwrappers_deny_all_connections: true
