@@ -1,6 +1,6 @@
 ---
 # Ansible hardening user's password playbook
-- name: Task#2
+- name: Task2
   become: yes
   hosts: all
   connection: local
